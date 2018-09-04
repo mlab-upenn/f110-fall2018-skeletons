@@ -9,8 +9,8 @@ publisher = rospy.Publisher('/visualization_gap_finding', Marker, queue_size="1"
 
 # Input data is Vector3 representing center of largest gap
 def callback(data):
-while not rospy.is_shutdown():
-    marker = Marker()
+    while not rospy.is_shutdown():
+        marker = Marker()
 
 # Specify the frame in which to interpret the x,y,z coordinates. It is the laser frame.
     marker.header.frame_id = "/laser"
@@ -28,11 +28,11 @@ while not rospy.is_shutdown():
     marker.color.g = 1.0
     marker.color.b = 0.0
 
-		# Publish the MarkerArray
-		print("Sending marker")
-		publisher.publish(marker)
+    # Publish the MarkerArray
+    print("Sending marker")
+    publisher.publish(marker)
 
 if __name__ == '__main__':
-		rospy.init_node('visualize_gap_finding')
-		rospy.Subsriber('/gap_center', Vector3, callback)
-		rospy.spin()
+    rospy.init_node('visualize_gap_finding')
+    rospy.Subscriber('/gap_center', Vector3, callback)
+    rospy.spin()

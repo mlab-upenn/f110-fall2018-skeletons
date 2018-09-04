@@ -1,4 +1,4 @@
-# f110-upenn-course
+# f110-fall2018-course
 Skeleton codes for F110 Fall 2018 course at UPenn.
 
 In order to add the contents of this repository to your workspace on your local machine, do the following:
