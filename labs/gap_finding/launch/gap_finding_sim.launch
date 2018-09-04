@@ -8,7 +8,7 @@
   </include>
 
   <!-- output="screen" allows us to see print statements -->
-  <node pkg="gap_finding" name="gap_finding_node" type="gap_finding.py" output="screen"/>
+  <node pkg="gap_finding" name="find_gap_node" type="find_gap.py" output="screen"/>
   <node pkg="gap_finding" name="sim_connector_node" type="sim_connector.py" output="screen"/>
   <node pkg="gap_finding" name="visualize_gap_finding_node" type="visualize_gap_finding.py" output="screen"/>
 
