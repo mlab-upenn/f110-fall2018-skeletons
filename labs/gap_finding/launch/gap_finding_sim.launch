@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
   <include file="$(find racecar_gazebo)/launch/racecar.launch">
-	<arg name="world_name" value="track_levine"/>
+	<arg name="world_name" value="track_porto"/>
   </include>
   <include file="$(find racecar)/launch/includes/common/joy_teleop.launch.xml" >
       <arg name="racecar_version" value="racecar-v2" />
@@ -10,5 +10,6 @@
   <!-- output="screen" allows us to see print statements -->
   <node pkg="gap_finding" name="gap_finding_node" type="gap_finding.py" output="screen"/>
   <node pkg="gap_finding" name="sim_connector_node" type="sim_connector.py" output="screen"/>
+  <node pkg="gap_finding" name="visualize_gap_finding_node" type="visualize_gap_finding.py" output="screen"/>
 
 </launch>
