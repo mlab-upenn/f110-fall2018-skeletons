@@ -40,5 +40,10 @@ The generated devel and build folders at the root of the workspace are where the
 $ source devel/setup.bash
 ```
 
+You can now run a launch file using the following. 
+```bash
+$ roslaunch gap_finding gap_finding_sim.launch
+```
+
 TROUBLESHOOTING
 If for some reason you get a build error, try deleting the CMakeLists.txt file and running catkin_make again. 
