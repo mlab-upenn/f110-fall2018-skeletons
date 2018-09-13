@@ -1,4 +1,5 @@
 joy_node:
+  dev: /dev/input/joypad-f710
   deadzone: 0.01
   autorepeat_rate: 20
   coalesce_interval: 0.01
@@ -28,10 +29,10 @@ teleop:
       -
         axis: 1
         target: drive.speed
-        scale: 2.0                   # joystick will command plus or minus 2 meters / second
+        scale: -5.0                   # joystick will command plus or minus 2 meters / second
         offset: 0.0
       -
-        axis: 3
+        axis: 2
         target: drive.steering_angle
         scale: 0.34                  # joystick will command plus or minus ~20 degrees steering angle
         offset: 0.0

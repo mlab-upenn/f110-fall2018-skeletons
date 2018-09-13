@@ -14,8 +14,7 @@ throttle_smoother_rate: 75.0 # messages/sec
 
 # servo value (0 to 1) =  steering_angle_to_servo_gain * steering angle (radians) + steering_angle_to_servo_offset
 steering_angle_to_servo_gain: -1.2135
-steering_angle_to_servo_offset: 0.59
-#.5304
+steering_angle_to_servo_offset: 0.5304
 
 # publish odom to base link tf
 vesc_to_odom/publish_tf: false
@@ -24,15 +23,15 @@ vesc_to_odom/publish_tf: false
 wheelbase: .25
 
 vesc_driver:
-  port: /dev/ttyACM0
+  port: /dev/sensors/vesc
   duty_cycle_min: 0.0
   duty_cycle_max: 0.0
   current_min: 0.0
-  current_max: 20.0
+  current_max: 100.0
   brake_min: -20000.0
   brake_max: 200000.0
-  speed_min: -15000
-  speed_max: 15000 # modified to go faster
+  speed_min: -23250
+  speed_max: 23250
   position_min: 0.0
   position_max: 0.0
   servo_min: 0.15
