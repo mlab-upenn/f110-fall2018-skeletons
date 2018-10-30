@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="racecar" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:include filename="$(find racecar_description)/urdf/macros.xacro" />
+  <xacro:include filename="$(find f110_description)/urdf/macros.xacro" />
 
   <!-- Add chassis and it's inertia link -->
 
@@ -268,7 +268,7 @@
 
   <!-- Add the remaining xacros -->
 
-  <xacro:include filename="$(find racecar_description)/urdf/racecar.gazebo" />
-  <xacro:include filename="$(find racecar_description)/urdf/materials.xacro" />
+  <xacro:include filename="$(find f110_description)/urdf/racecar.gazebo" />
+  <xacro:include filename="$(find f110_description)/urdf/materials.xacro" />
 
 </robot>
