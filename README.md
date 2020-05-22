@@ -1,3 +1,5 @@
+# This repo is no longer supported. Updated skeleton codes can be found here: https://github.com/f1tenth/f1tenth_labs
+
 # f110-fall2018-course
 Skeleton codes for F110 Fall 2018 course at UPenn.
 
